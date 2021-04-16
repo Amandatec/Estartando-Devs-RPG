@@ -4,6 +4,7 @@ header {
     text-align: center;
     font-family:'New Tegomin', 'serif';
     padding-bottom: 2rem;
+    box-sizing: border-box;
     width: 100%;
 } 
 
@@ -12,7 +13,7 @@ header {
 }
 
 .subtitle {
-    font-size: 2;
+    font-size: 2rem;
 }
 
 .personagem {
@@ -21,25 +22,69 @@ header {
     object-fit: cover;
     object-position: center top;
     border-radius: 50%;
-   
+  
 }
 
 form {
-    background-color: limegreen;
-    width: 800px;
+    background-color: lightgray;
+    width: clamp(50vw, 80rem, 80vw);
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+    margin: 0  auto;
+}
+
+input[type='text'],
+input[type='number'] {
+    background: transparent;
+    border: none;
+    width: 15rem;
+    padding: 1rem 2 rem;
+    border-bottom: 1px white solid;
+    transition: 1s ease-in ;
+}
+
+input[type='text']:focus,
+input[type='number']:focus {
+    outline: none;
+}
+
+input.race {
+    width: 50%;
+}
+
+input.race:hover,
+input.race:focus,
+details:hover,
+details:focus-within,
+input[type='number']:hover,
+input[type='number']:focus {
+    background-color: #f1f1c1;
+}
+
+button {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: 'New Tegomin', 'serif';
 }
 
 footer {
     background-color: black;
-    position: absolute;
+    padding: 2rem;
 }
 
 footer p {
     color: white;
     text-align: center;
+    font-size: 2rem;
 }
 
 footer a {
     text-decoration: none;
     color: blue;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+    background-attachment: black;
 }
