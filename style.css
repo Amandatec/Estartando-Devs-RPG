@@ -1,3 +1,7 @@
+body {
+    min-width: 20rem;
+}
+
 header {
     background-color:  black;
     color: yellow;
@@ -23,6 +27,7 @@ header {
     object-position: center top;
     border-radius: 50%;
     margin-bottom: 8rem ;
+    padding: 1rem auto;
     }
 
 form {
@@ -30,7 +35,7 @@ form {
     width: clamp(50vw, 80rem, 80vw);
     border-radius: 1rem;
     padding: 3rem 2rem;
-    margin: 0  auto;
+    margin: 0  auto 5rem auto;
 }
 
 input[type='text'],
@@ -45,12 +50,13 @@ input[type='number'] {
 
 input[type='text']:focus,
 input[type='number']:focus {
-    outline: none;
+    outline-color: none;
+    margin: 2rem auto;
 }
 
 input.race {
-    width: 50%;
-   
+    width: 50%;  
+    margin-bottom: 3rem;
 }
 
 input.race:hover,
@@ -70,7 +76,6 @@ button {
     display: block;
     float: right;
     margin-right: 1rem;
- 
 }
 
 button:hover {
@@ -80,8 +85,11 @@ button:hover {
 
 footer {
     background-color: black;
-    padding: 2rem;
-    margin-top: 0;
+    margin-top: 15rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    
 }
 
 footer p {
