@@ -22,8 +22,8 @@ header {
     object-fit: cover;
     object-position: center top;
     border-radius: 50%;
-  
-}
+    margin-bottom: 8rem ;
+    }
 
 form {
     background-color: lightgray;
@@ -40,7 +40,7 @@ input[type='number'] {
     width: 15rem;
     padding: 1rem 2 rem;
     border-bottom: 1px white solid;
-    transition: 1s ease-in ;
+    transition: background 1s ease-in;
 }
 
 input[type='text']:focus,
@@ -50,6 +50,7 @@ input[type='number']:focus {
 
 input.race {
     width: 50%;
+   
 }
 
 input.race:hover,
@@ -64,12 +65,23 @@ input[type='number']:focus {
 button {
     padding: 1rem;
     font-size: 1.5rem;
+    font-weight: bold;
     font-family: 'New Tegomin', 'serif';
+    display: block;
+    float: right;
+    margin-right: 1rem;
+ 
+}
+
+button:hover {
+    background-color: darkgray;
+    transition: 2s;
 }
 
 footer {
     background-color: black;
     padding: 2rem;
+    margin-top: 0;
 }
 
 footer p {
