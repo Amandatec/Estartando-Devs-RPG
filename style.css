@@ -10,6 +10,7 @@ header {
     padding-bottom: 2rem;
     box-sizing: border-box;
     width: 100%;
+    
 } 
 
 .title {
@@ -35,7 +36,7 @@ form {
     width: clamp(50vw, 80rem, 80vw);
     border-radius: 1rem;
     padding: 3rem 2rem;
-    margin: 0  auto 5rem auto;
+    margin: 0  auto 3rem auto;
 }
 
 input[type='text'],
@@ -75,21 +76,23 @@ button {
     font-family: 'New Tegomin', 'serif';
     display: block;
     float: right;
-    margin-right: 1rem;
+    margin-right: 1 rem;
+    margin-top: -2rem;
+    border-radius: 0.5rem ;
 }
 
 button:hover {
-    background-color: darkgray;
+    background-color: black;
     transition: 2s;
+    color: white;
 }
 
 footer {
     background-color: black;
-    margin-top: 15rem;
+    margin-top: 0 auto;
     width: 100%;
     position: fixed;
     bottom: 0px;
-    
 }
 
 footer p {
